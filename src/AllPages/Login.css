@@ -1,0 +1,35 @@
+
+body{
+    background-color:white;
+    
+}
+.Login{
+    font-weight: bold;
+    color:antiquewhite;
+    background-color: darkcyan;
+    width:20%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left:40%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.logbox{
+    margin-top:12%;
+}
+#box1{
+    width:50%;
+}
+#box{
+    width:50%;
+    
+}
+.button{
+    background-color: black;
+    color: white;
+}
+.logbox h1{
+    color: blue;
+}

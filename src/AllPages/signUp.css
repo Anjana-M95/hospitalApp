@@ -1,0 +1,22 @@
+
+.Signup{
+    font-weight:lighter;
+    color:antiquewhite;
+    background-color:black;
+    width:20%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    left:40%;
+    height:325px;
+}
+.button1{
+    background-color: green;
+    width:30%;
+    padding-top:3%;
+    padding-bottom: 3%;
+}
+.log{
+    padding-top: 10px;
+}

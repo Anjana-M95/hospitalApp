@@ -1,0 +1,17 @@
+.Resume{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:lightgrey;
+    color:teal;
+}
+.apply{
+    font-weight: bold;
+    color: black;
+    line-height:2;
+}
+.button{
+    margin-top:20px ;
+    margin-bottom: 20px;
+}

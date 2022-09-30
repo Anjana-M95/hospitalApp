@@ -1,0 +1,33 @@
+.Footer{
+    background-color:lightgreen;
+    height:300px;
+    }
+    .left{
+        position:absolute;
+        left:30px;
+        padding-left:40px;
+}
+.hname{
+    padding-top:20px;
+}
+.media{
+    padding-top: 20px;
+    
+}
+.smedia{
+    padding-top:10px;
+}
+.two{
+    display :flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+ul li{
+  list-style:none ;
+  line-height:0.5;
+}
+.right{
+    position:absolute;
+    right:20%;
+}

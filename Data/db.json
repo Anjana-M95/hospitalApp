@@ -1,0 +1,116 @@
+{
+  "navList": [
+    {
+      "id": 1,
+      "option": "ABOUT",
+      "link": "/About"
+    },
+    {
+      "id": 2,
+      "option": "CARE",
+      "link": "/care"
+    },
+    {
+      "id": 3,
+      "option": "ACADEMY",
+      "link": "/Academy"
+    },
+    {
+      "id": 4,
+      "option": "CAREER",
+      "link": "/Career"
+    },
+    {
+      "id": 5,
+      "option": "FEEDBACK",
+      "link": "/Feedback"
+    }
+  ],
+  "card": [
+    {
+      "id": 1,
+      "image": "https://news.emory.edu/stories/2021/11/ehc_named_most_trusted_health_system_brand/thumbs/story_main.jpg",
+      "head": "SERVICES AND FACILITIES",
+      "link": "/facility"
+    },
+    {
+      "id": 2,
+      "image": "https://www.alcimed.com/wp-content/webp-express/webp-images/uploads/2020/10/patient-activation-key-success-factors-for-campaigns-by-Alcimed.jpg.webp",
+      "head": "HEALTH AWARENESS",
+      "link": "/awareness"
+    },
+    {
+      "id": 3,
+      "image": "https://i0.wp.com/www.bigtimedaily.com/wp-content/uploads/2020/12/medical-equipment.jpg?w=2240&ssl=1",
+      "head": "TECHNOLOGY UPDATES",
+      "link": "/tech"
+    }
+  ],
+  "academics": [
+    {
+      "id": 1,
+      "image": "https://www.usnews.com/object/image/00000178-17c5-d58a-af7a-3fd5adad0000/210309-medschool-stock.jpg?update-time=1615306629424&size=responsive970"
+    },
+    {
+      "id": 2,
+      "image": "https://scopeblog.stanford.edu/wp-content/uploads/2019/02/RSD16_061_0069a-cropped-1152x578.jpg"
+    },
+    {
+      "id": 3,
+      "image": "https://image.cnbcfm.com/api/v1/image/105066008-NYU_Graduates.jpg?v=1532563669&w=740&h=416"
+    }
+  ],
+  "list": [
+    { "id": 1, "head": "PATIENT CARE" },
+    {
+      "id": 2,
+      "para": "Home care can be the key to achieving the highest quality of life possible. It can enable safety, security and increased independence; it can ease management of an ongoing medical condition; it can help avoid unnecessary  hospitalization; it can aid with recovery after an illness, injury, or hospital stay—all through care given in the comfort and familiarity of home. Home care can include:"
+    },
+    {
+      "id": 3,
+      "point": "Help with daily activities such as dressing and bathing"
+    },
+    { "point": "Assistance with safely managing tasks around the house" },
+    { "id": 4, "point": "Companionship" },
+    { "id": 5, "point": "Therapy and rehabilitative services" },
+    { "point": "Short- or long-term nursing care for an illness" },
+    {
+      "id": 6,
+      "point": "disease, or disability—including tracheostomy and ventilator care"
+    }
+  ],
+  "aware": [
+    { "id": 1, "cure": "Mental Well-Being" },
+    { "id": 2, "cure": "Physical Well-Being" },
+    { "id": 3, "cure": "Nutrition and Food" }
+  ],
+  "facility": [
+    { "id": 1, "service": "Facilities Highlight" },
+    { "id": 2, "service": " Day care Services" },
+    { "id": 3, "service": "24X7 Pharmacy" },
+    { "id": 4, "service": "24X7 Clinical Laboratory Services" },
+    { "id": 5, "service": "24X7 Ambulance" },
+    { "id": 6, "service": "Health Checkups" }
+  ],
+  "programs": [
+    { "id": 1, "topic": "Undergraduate" },
+    { "id": 2, "topic": "Postgraduate" },
+    { "id": 3, "topic": "Online Programs" }
+  ],
+  "branches": [
+    { "id": 1, "a": 1, "division": "Medicine" },
+    { "id": 2, "a": 1, "division": "Dentistry" },
+    { "id": 3, "a": 1, "division": "Nursing" },
+    { "id": 4, "a": 1, "division": "Pharmacy" },
+    { "id": 5, "a": 1, "division": "Allied Health Sciences" },
+    { "id": 6, "a": 2, "division": "Medicine" },
+    { "id": 7, "a": 2, "division": "Dentistry" },
+    { "id": 8, "a": 3, "division": "Certificate programs" },
+    { "id": 9, "a": 3, "division": "Degree programs" }
+  ],
+  "medcareer": [
+    { "id": 1, "choice": "MEDICAL", "open": "3 openings" },
+    { "id": 2, "choice": "CLINICAL", "open": "3 openings" },
+    { "id": 3, "choice": "NURSING", "open": "5 openings" }
+  ]
+}

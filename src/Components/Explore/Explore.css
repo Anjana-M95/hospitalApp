@@ -1,0 +1,28 @@
+.timing{
+    font-size: 50px;
+    color:darkcyan;
+}
+.Explore{
+    text-align: center;
+    line-height: normal;
+}
+.description{
+    padding-top: 10px;
+    line-height:1.5;
+}
+.Video{
+    background-color:cornflowerblue;
+    padding:1%;
+    border:none;
+    margin-top: 2%;
+    color:white;
+    font-size:medium;
+}
+.time{
+    color:white;
+    font-size:medium;
+    background-color:cornflowerblue;
+    margin-left: 5%;
+    padding:1%;
+    border:none;
+}

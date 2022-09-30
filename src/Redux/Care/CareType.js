@@ -1,0 +1,1 @@
+export const GET_CARE='GET_CARE';

@@ -1,0 +1,15 @@
+.serve{
+    display: flex;
+    justify-content: center;
+    margin:10px;
+    text-align: center;
+}
+.hservice{
+    width:450px;
+    margin: 10px;
+  
+}
+.header{
+    text-align: center;
+    cursor:pointer;
+}
