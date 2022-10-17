@@ -3,25 +3,44 @@ import { useAuth } from "./auth";
 import { useHistory } from "react-router-dom";
 import "./Login.css";
 import React from "react";
+import axios from "axios";
+// import { useHistory } from "react-router-dom";
 
 export const Login = () => {
-  const [user, setUser] = useState("");
-
-  const auth = useAuth();
+  const [userEml, setUserEml] = useState("");
+  const [userPswd, setUserPswd] = useState("");
   const history = useHistory();
+  const auth = useAuth();
 
-  const ChangeName = (event) => {
-    setUser(event.target.value);
+  const ChangeEmail = (event) => {
+    setUserEml(event.target.value);
   };
   const handlePassword = (event) => {
-    setUser(event.target.value);
+    setUserPswd(event.target.value);
   };
   const handleLogin = () => {
-    auth.login(user);
-    if (user === "123") {
-      history.push("/");
-    } else history.push("/login");
-    sessionStorage.setItem("user", JSON.stringify(user));
+    axios
+      .post("http://127.0.0.1:3001/auth/login", {
+        email: userEml,
+        password: userPswd,
+      })
+      .then((response) => {
+        console.log(response, "response");
+
+        if (response.data.success === true) {
+          auth.login(response.data.token);
+          localStorage.setItem("user", response.data.token);
+          console.log(response.data.token, "tokenfe");
+          setUserEml("");
+          setUserPswd("");
+          history.push("/");
+        } else {
+          alert(response.data.msg);
+          setUserEml("");
+          setUserPswd("");
+        }
+        // else history.push("/login");
+      });
   };
 
   return (
@@ -30,11 +49,16 @@ export const Login = () => {
       <div className="Login">
         <label>Email</label>
         <br></br>
-        <input id="box1" type="text" onChange={ChangeName} />
+        <input id="box1" type="text" onChange={ChangeEmail} value={userEml} />
         <br></br>
         <label> Password</label>
         <br></br>
-        <input id="box" type="text" onChange={handlePassword} />
+        <input
+          id="box"
+          type="text"
+          onChange={handlePassword}
+          value={userPswd}
+        />
         <br></br>
         <button className="button" onClick={handleLogin}>
           LogIn

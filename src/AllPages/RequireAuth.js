@@ -4,7 +4,7 @@ import { useAuth } from "./auth";
 
 export const RequireAuth = ({ children }) => {
   const auth = useAuth();
-  const session = sessionStorage.getItem("user");
+  const session = localStorage.getItem("user");
 
   if (!auth.user && session === null) {
     return <Redirect to="/Signup" />;
