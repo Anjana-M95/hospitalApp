@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./Navbar.css";
 import { useAuth } from "../../AllPages/auth";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import NavbarAPI from "../../API/NavbarAPI";
 import { useDispatch, useSelector } from "react-redux";
 
@@ -13,7 +13,10 @@ function Navbar() {
 
   const dispatch = useDispatch();
   useEffect(() => dispatch(NavbarAPI()), []);
-
+  const handleLogout = () => {
+    auth.logout();
+    history.push("/");
+  };
   const handleHome = () => {
     history.push("/");
   };
@@ -41,6 +44,14 @@ function Navbar() {
           ))}
       </ul>
       {!auth.user}
+      <div className="logout">
+        <Link
+          style={{ color: "burlywood", fontSize: "20px" }}
+          onClick={handleLogout}
+        >
+          LOGOUT
+        </Link>
+      </div>
     </div>
   );
 }

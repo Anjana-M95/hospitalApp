@@ -1,6 +1,5 @@
 import { useState } from "react";
 import React from "react";
-import { useHistory } from "react-router-dom";
 import "./signUp.css";
 import axios from "axios";
 import "react-toastify/dist/ReactToastify.css";
@@ -11,7 +10,7 @@ const SignUp = () => {
   const [userName, setUserName] = useState("");
   const [userEml, setUserEml] = useState("");
   const [userPswd, setUserPswd] = useState("");
-  const history = useHistory();
+
   const ChangeName = (event) => {
     setUserName(event.target.value);
   };
@@ -23,27 +22,34 @@ const SignUp = () => {
     setUserPswd(event.target.value);
   };
 
-  const handleSignup = () => {
-    axios
+  const handleSignup = async () => {
+    await axios
       .post("http://localhost:3001/auth/SignUp", {
         name: userName,
         email: userEml,
         password: userPswd,
       })
       .then((response) => {
+        console.log("TEST: ", response);
+
         if (response.data.success) {
           console.log(response);
           toast.success("user created succesfully", {
             position: toast.POSITION.TOP_CENTER,
           });
+          setUserName("");
+          setUserPswd("");
+          setUserEml("");
         } else {
-          toast.error("failed to create");
+          toast.error(response.data.msg);
         }
       })
-      .catch(() => {
-        console.log("error");
+      .catch((err) => {
+        console.log(err, "gfdg");
+        toast.error(err.response.data.msg);
       });
   };
+
   return (
     <div className="Signupbox">
       <ToastContainer autoClose={false} />
@@ -51,15 +57,20 @@ const SignUp = () => {
       <div className="Signup">
         <label>Name</label>
         <br></br>
-        <input id="box1" type="text" onChange={ChangeName} />
+        <input id="box1" type="text" onChange={ChangeName} value={userName} />
         <br></br>
         <label> Email</label>
         <br></br>
-        <input id="box" type="text" onChange={changeEmail} />
+        <input id="box" type="text" onChange={changeEmail} value={userEml} />
         <br></br>
         <label> Password</label>
         <br></br>
-        <input id="box" type="text" onChange={handlePassword} />
+        <input
+          id="box"
+          type="text"
+          onChange={handlePassword}
+          value={userPswd}
+        />
         <br></br>
         <button className="button1" onClick={handleSignup}>
           Sign Up
