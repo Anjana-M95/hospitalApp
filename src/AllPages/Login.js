@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useAuth } from "./auth";
 import { useHistory } from "react-router-dom";
 import "./Login.css";
@@ -42,6 +42,12 @@ export const Login = () => {
         // else history.push("/login");
       });
   };
+  useEffect(() => {
+    const token = localStorage.getItem("user");
+    if (token) {
+      history.push("/");
+    }
+  });
 
   return (
     <div className="logbox">
@@ -55,7 +61,7 @@ export const Login = () => {
         <br></br>
         <input
           id="box"
-          type="text"
+          type="password"
           onChange={handlePassword}
           value={userPswd}
         />
