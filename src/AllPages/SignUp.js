@@ -67,7 +67,7 @@ const SignUp = () => {
         <br></br>
         <input
           id="box"
-          type="text"
+          type="password"
           onChange={handlePassword}
           value={userPswd}
         />

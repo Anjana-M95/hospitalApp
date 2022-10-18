@@ -6,7 +6,9 @@ import "./Services.css";
 
 function Services() {
   const history = useHistory();
-  const cards = useSelector((state) => state.serviceList.value.data);
+  const cards = useSelector((state) => state.serviceList.value);
+
+  console.log("cards", cards);
   const dispatch = useDispatch();
   useEffect(() => dispatch(ServicesAPI()), []);
 
@@ -23,7 +25,7 @@ function Services() {
                 history.push(item.link);
               }}
             >
-              {item.head}
+              {item.title}
             </h2>
           </div>
         );
