@@ -29,19 +29,19 @@
   "card": [
     {
       "id": 1,
-      "image": "https://news.emory.edu/stories/2021/11/ehc_named_most_trusted_health_system_brand/thumbs/story_main.jpg",
+      "image": " http://localhost:3001/uploads/image1.jpg",
       "head": "SERVICES AND FACILITIES",
       "link": "/facility"
     },
     {
       "id": 2,
-      "image": "https://www.alcimed.com/wp-content/webp-express/webp-images/uploads/2020/10/patient-activation-key-success-factors-for-campaigns-by-Alcimed.jpg.webp",
+      "image": " http://localhost:3001/uploads/image2.webp",
       "head": "HEALTH AWARENESS",
       "link": "/awareness"
     },
     {
       "id": 3,
-      "image": "https://i0.wp.com/www.bigtimedaily.com/wp-content/uploads/2020/12/medical-equipment.jpg?w=2240&ssl=1",
+      "image": "http://localhost:3001/uploads/image3.webp",
       "head": "TECHNOLOGY UPDATES",
       "link": "/tech"
     }

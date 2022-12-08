@@ -1,0 +1,55 @@
+.MoreFeedback{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-color:floralwhite;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.card{
+    display:grid;
+   grid-template-columns: max-content;
+
+}
+.Avatar{
+   margin-left: 30%;
+   height: 50px;
+   border-radius: 50%;
+   padding-top: 30px;
+}
+.heading{
+   margin-left: 10%;
+}
+
+.name{
+    text-align:left;
+
+}
+.review{
+    text-align:center;
+   padding-top: 60px;
+   overflow-wrap:anywhere;
+}
+.first{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.image{
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: left; 
+ }
+.content{
+display:flex;
+
+}
+.userimage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+

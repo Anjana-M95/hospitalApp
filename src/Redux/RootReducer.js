@@ -7,7 +7,7 @@ import FacilityReducer from "./Facility/FacilityReducer";
 import AwarenessReducer from "./Awareness/AwarenessReducer";
 import CoursesReducer from "./Courses/CoursesReducer";
 import { AcademyReducer } from "./Academy/AcademyReducer";
-
+import { FeedbackReducer } from "./feedback/feedbackReducer";
 
 export const RootReducer = combineReducers({
   navigationList: NavbarReducer,
@@ -17,5 +17,6 @@ export const RootReducer = combineReducers({
   facilityList: FacilityReducer,
   awarenessList: AwarenessReducer,
   courseList: CoursesReducer,
-  academyList:AcademyReducer,
+  academyList: AcademyReducer,
+  feedbackList: FeedbackReducer,
 });

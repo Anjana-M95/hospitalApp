@@ -1,5 +1,4 @@
 import "./App.css";
-import Home from "./AllPages/Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Page from "./AllPages/Page";
 import Pcare from "./AllPages/Pcare";
@@ -15,9 +14,11 @@ import Techupdates from "./Components/Techupdates/Techupdates";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 import { Provider } from "react-redux";
-import { Store } from "./Redux/Store";
 import React from "react";
 import SignUp from "./AllPages/SignUp";
+import { Store } from "./Redux/Store";
+import Home from "./AllPages/Home";
+import FeedbackMore from "./AllPages/feedbackMore";
 
 function App() {
   return (
@@ -77,6 +78,11 @@ function App() {
                 <Route path="/tech">
                   <RequireAuth>
                     <Techupdates />
+                  </RequireAuth>
+                </Route>
+                <Route path="/more/:id">
+                  <RequireAuth>
+                    <FeedbackMore />
                   </RequireAuth>
                 </Route>
                 <Footer />

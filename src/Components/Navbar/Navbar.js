@@ -6,7 +6,6 @@ import NavbarAPI from "../../API/NavbarAPI";
 import { useDispatch, useSelector } from "react-redux";
 
 function Navbar() {
-  // const [nav, setNav] = useState([]);
   const auth = useAuth();
   const history = useHistory();
   const nav = useSelector((state) => state.navigationList.navbaroption.data);
@@ -42,16 +41,16 @@ function Navbar() {
               </h1>
             </li>
           ))}
+        <div className="logout">
+          <Link
+            style={{ color: "burlywood", fontSize: "20px" }}
+            onClick={handleLogout}
+          >
+            LOGOUT
+          </Link>
+        </div>
       </ul>
       {!auth.user}
-      <div className="logout">
-        <Link
-          style={{ color: "burlywood", fontSize: "20px" }}
-          onClick={handleLogout}
-        >
-          LOGOUT
-        </Link>
-      </div>
     </div>
   );
 }

@@ -19,6 +19,11 @@
     color:white;
     font-size:medium;
 }
+.Video:active {
+    background-color:dodgerblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
 .time{
     color:white;
     font-size:medium;
@@ -27,3 +32,8 @@
     padding:1%;
     border:none;
 }
+.time:active {
+    background-color:dodgerblue;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }

@@ -1,8 +1,8 @@
 import React from "react";
 
 import Slider from "../Components/Slider/Slider";
-import Explore from "../Components/Explore/Explore";
-import Feedback from "../Components/Feedback/Feedback";
+import Explore from "../Components/Explore/explore";
+import Feedback from "../Components/Feedback/feedback";
 function Pfeedback() {
   return (
     <div className="Pfeedback">

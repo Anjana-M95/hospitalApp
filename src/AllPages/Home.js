@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "../Components/Slider/Slider";
-import Explore from "../Components/Explore/Explore";
+import Explore from "../Components/Explore/explore";
 import Form from "../Components/Form/Form";
 import Services from "../Components/Services/Services";
 

@@ -1,8 +1,8 @@
 .Navbar{
-    width:100%;
+    width:98.8%;
     background-color:darkcyan;
     height:120px;
-    padding:10px;
+    padding:9px;
    
 }
 .logo{
@@ -20,9 +20,6 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 ul li{
-    padding:20px;
+    padding:13px;
 }
-.logout{
-    display:flex;
-    justify-content: right;
-}
+
